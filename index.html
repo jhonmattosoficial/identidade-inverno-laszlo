@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>Identidade Visual · Esquenta de Inverno · LASZLO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  @page { size: 1920px 1080px; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { 
+    background:#0e0e0e; 
+    overflow-x: hidden;
+  }
+  body { 
+    font-family: 'DM Sans', sans-serif; 
+    color:#3D2B1A; 
+    padding-bottom: 200px;
+  }
+  @media screen and (max-width: 1920px) {
+    body { zoom: calc(100vw / 1920); }
+  }
+  @media screen and (orientation: portrait) {
+    .slide-posts { height: 9600px !important; }
+    .posts-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 160px !important;
+      top: 600px !important;
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
+    .posts-grid > div {
+      width: 1080px !important;
+      height: 1350px !important;
+    }
+
+    .slide-reels { height: 6200px !important; }
+    .reels-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 160px !important;
+      top: 600px !important;
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
+    .reels-grid > div {
+      width: 900px !important;
+      height: 1600px !important;
+    }
+  }
+
+  .slide {
+    width:1920px; height:1080px;
+    page-break-after: always;
+    position:relative; overflow:hidden;
+    margin: 0 auto;
+    background:#F4EDE0;
+  }
+  .slide:last-child { page-break-after: auto; }
+
+  .serif { font-family:'Playfair Display', Georgia, serif; }
+  .sans  { font-family:'DM Sans', Helvetica, sans-serif; }
+
+  /* ============ TIPOGRAFIA UTILS ============ */
+  .label {
+    font-family:'DM Sans', sans-serif;
+    font-weight:600; font-size:11px;
+    letter-spacing:0.20em; text-transform:uppercase;
+  }
+  .h1-display {
+    font-family:'Playfair Display', serif;
+    font-weight:700; font-size:96px;
+    line-height:1.05; letter-spacing:-0.025em;
+  }
+  .h2-section {
+    font-family:'Playfair Display', serif;
+    font-weight:700; font-size:44px;
+    line-height:1.1; letter-spacing:-0.02em;
+  }
+  .h3-card {
+    font-family:'DM Sans', sans-serif;
+    font-weight:500; font-size:20px; line-height:1.3;
+  }
+  .body-text {
+    font-family:'DM Sans', sans-serif;
+    font-weight:400; font-size:16px; line-height:1.65;
+  }
+  .body-light {
+    font-weight:300; font-size:14px; line-height:1.7;
+    opacity:0.82;
+  }
+
+  /* ============ DETALHES ============ */
+  .page-number {
+    position:absolute; bottom:48px; right:64px;
+    font-family:'DM Sans', sans-serif;
+    font-size:11px; font-weight:600;
+    letter-spacing:0.20em; text-transform:uppercase;
+    color:#3D2B1A; opacity:0.55;
+  }
+  .page-number--light { color:#FAF7F2; opacity:0.55; }
+  .footer-meta {
+    position:absolute; bottom:48px; left:64px;
+    font-family:'DM Sans', sans-serif;
+    font-size:11px; font-weight:600;
+    letter-spacing:0.20em; text-transform:uppercase;
+    color:#3D2B1A; opacity:0.55;
+  }
+  .footer-meta--light { color:#FAF7F2; opacity:0.55; }
+  .logo-laszlo {
+    font-family:'Playfair Display', serif;
+    font-weight:400; font-size:22px;
+    letter-spacing:0.45em;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- SLIDE 01 — CAPA -->
+<!-- ============================================================ -->
+<section class="slide" style="background:url('backgraund.png') center/cover no-repeat;color:#FAF7F2;">
+
+  <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
+    <defs>
+      <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.96  0 0 0 0 0.94  0 0 0 0 0.89  0 0 0 0.04 0"/></filter>
+    </defs>
+    <rect width="1920" height="1080" filter="url(#grain)" opacity="0.5"/>
+    <g stroke="#FAF7F2" fill="none" stroke-linecap="round">
+      <path d="M-100,920 Q300,800 600,860 T1200,720 T2000,650" stroke-width="1.4" stroke-opacity="0.13"/>
+      <path d="M-100,990 Q400,890 700,930 T1300,810 T2000,750" stroke-width="1.1" stroke-opacity="0.11"/>
+      <path d="M-100,1060 Q500,960 800,990 T1400,890 T2000,830" stroke-width="0.9" stroke-opacity="0.09"/>
+      <path d="M-100,840 Q350,720 650,770 T1250,620 T2000,540" stroke-width="0.7" stroke-opacity="0.08"/>
+      <path d="M-100,770 Q400,650 720,690 T1300,540 T2000,460" stroke-width="0.6" stroke-opacity="0.07"/>
+      <path d="M-100,700 Q420,580 750,610 T1320,460 T2000,380" stroke-width="0.5" stroke-opacity="0.06"/>
+      <path d="M-100,630 Q470,510 800,520 T1380,390 T2000,310" stroke-width="0.5" stroke-opacity="0.05"/>
+      <path d="M-150,560 Q500,440 850,440 T1450,320 T2050,240" stroke-width="0.4" stroke-opacity="0.04"/>
+    </g>
+  </svg>
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#FAF7F2;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#FAF7F2;opacity:0.35;"></div>
+    <div class="label" style="color:#FAF7F2;opacity:0.75;">Identidade visual · Campanha de Inverno</div>
+  </div>
+
+  <div style="position:absolute;left:120px;bottom:200px;max-width:1500px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:32px;">Campanha LASZLO · Julho 2026</div>
+    <h1 class="h1-display" style="font-size:184px;line-height:0.95;letter-spacing:-0.035em;color:#FAF7F2;">
+      Esquenta<br>
+      <em style="font-weight:400;font-style:italic;">de Inverno.</em>
+    </h1>
+    <div style="display:flex;align-items:center;gap:28px;margin-top:64px;">
+      <div style="width:80px;height:1px;background:#C07A2B;"></div>
+      <p class="serif" style="font-size:24px;font-style:italic;color:#FAF7F2;opacity:0.85;letter-spacing:0.01em;">
+        O cuidado que o inverno pede.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-meta footer-meta--light">Esquenta de Inverno · LASZLO</div>
+  <div class="page-number page-number--light">01 · Capa</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SLIDE 02 — CONCEITO -->
+<!-- ============================================================ -->
+<section class="slide" style="background:#F4EDE0;color:#3D2B1A;">
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#3D2B1A;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#3D2B1A;opacity:0.25;"></div>
+    <div class="label" style="color:#3D2B1A;opacity:0.65;">Conceito criativo</div>
+  </div>
+
+  <div style="position:absolute;left:120px;top:200px;width:780px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:24px;">01 · Conceito central</div>
+    <h2 class="h1-display" style="font-size:128px;line-height:0.95;letter-spacing:-0.035em;color:#2E4A37;">
+      O inverno<br>
+      que cheira<br>
+      <em style="font-style:italic;font-weight:400;color:#C07A2B;">bem.</em>
+    </h2>
+  </div>
+
+  <div style="position:absolute;right:120px;top:240px;width:720px;">
+    <div class="label" style="color:#3D2B1A;opacity:0.6;margin-bottom:32px;">Territórios da campanha</div>
+    <p class="serif" style="font-size:32px;font-weight:400;line-height:1.35;color:#3D2B1A;margin-bottom:48px;letter-spacing:-0.01em;">
+      O inverno no Brasil <em style="font-style:italic;">não é europeu</em>. Não tem neve, não tem lareira, não tem casaco de lã pesado.
+    </p>
+    <p class="body-text" style="font-size:18px;line-height:1.75;color:#3D2B1A;margin-bottom:28px;">
+      Tem cerração na serra, fumaça de difusor no quarto frio, óleo escorrendo entre os dedos antes de dormir, chá esfriando na mesa.
+    </p>
+    <p class="body-text" style="font-size:18px;line-height:1.75;color:#3D2B1A;font-weight:500;">
+      É íntimo, silencioso, sensorial.
+    </p>
+
+    <div style="margin-top:64px;padding-top:36px;border-top:1px solid #C8C3BB;">
+      <div class="label" style="color:#C07A2B;margin-bottom:18px;">Metáfora visual</div>
+      <p class="serif" style="font-size:22px;font-style:italic;line-height:1.5;color:#2E4A37;">
+        Vapor. A essência que se dissolve no ar frio. Uma gota de óleo que toca a pele. A névoa da manhã sobre a mata.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-meta">Esquenta de Inverno · LASZLO</div>
+  <div class="page-number">02 · Conceito</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SLIDE 03 — PALETA DE CORES -->
+<!-- ============================================================ -->
+<section class="slide" style="background:#F4EDE0;color:#3D2B1A;">
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#3D2B1A;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#3D2B1A;opacity:0.25;"></div>
+    <div class="label" style="color:#3D2B1A;opacity:0.65;">Sistema de cores da campanha</div>
+  </div>
+
+  <div style="position:absolute;left:120px;top:180px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:24px;">02 · Paleta</div>
+    <h2 class="h2-section" style="font-size:64px;color:#2E4A37;">Paleta cromática</h2>
+    <p class="body-text" style="font-size:16px;max-width:760px;margin-top:18px;opacity:0.8;">
+      Construída a partir das texturas reais do inverno brasileiro de altitude e dos próprios produtos da campanha: musgo, resina, argila, cera de abelha, louro, raiz.
+    </p>
+  </div>
+
+  <!-- Grid de cores -->
+  <div style="position:absolute;left:120px;top:420px;display:grid;grid-template-columns:repeat(3, 528px);grid-template-rows:repeat(2, 220px);gap:28px;">
+
+    <div style="background:#2E4A37;color:#FAF7F2;padding:28px;border-radius:6px;display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div class="label" style="opacity:0.75;color:#FAF7F2;">Primária</div>
+        <div class="serif" style="font-size:32px;font-weight:700;margin-top:8px;">Verde Musgo Profundo</div>
+      </div>
+      <div style="display:flex;gap:32px;align-items:end;">
+        <div>
+          <div class="label" style="opacity:0.65;color:#FAF7F2;">HEX</div>
+          <div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">#2E4A37</div>
+        </div>
+        <div>
+          <div class="label" style="opacity:0.65;color:#FAF7F2;">RGB</div>
+          <div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">46 · 74 · 55</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#C07A2B;color:#FAF7F2;padding:28px;border-radius:6px;display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div class="label" style="opacity:0.75;color:#FAF7F2;">Destaque</div>
+        <div class="serif" style="font-size:32px;font-weight:700;margin-top:8px;">Âmbar Resina</div>
+      </div>
+      <div style="display:flex;gap:32px;align-items:end;">
+        <div><div class="label" style="opacity:0.65;color:#FAF7F2;">HEX</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">#C07A2B</div></div>
+        <div><div class="label" style="opacity:0.65;color:#FAF7F2;">RGB</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">192 · 122 · 43</div></div>
+      </div>
+    </div>
+
+    <div style="background:#3D2B1A;color:#FAF7F2;padding:28px;border-radius:6px;display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div class="label" style="opacity:0.75;color:#FAF7F2;">Texto escuro</div>
+        <div class="serif" style="font-size:32px;font-weight:700;margin-top:8px;">Terra Copaíba</div>
+      </div>
+      <div style="display:flex;gap:32px;align-items:end;">
+        <div><div class="label" style="opacity:0.65;color:#FAF7F2;">HEX</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">#3D2B1A</div></div>
+        <div><div class="label" style="opacity:0.65;color:#FAF7F2;">RGB</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">61 · 43 · 26</div></div>
+      </div>
+    </div>
+
+    <div style="background:#F4EDE0;color:#3D2B1A;padding:28px;border-radius:6px;border:1px solid #C8C3BB;display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div class="label" style="opacity:0.65;">Fundo claro</div>
+        <div class="serif" style="font-size:32px;font-weight:700;margin-top:8px;color:#2E4A37;">Creme Aromático</div>
+      </div>
+      <div style="display:flex;gap:32px;align-items:end;">
+        <div><div class="label" style="opacity:0.55;">HEX</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">#F4EDE0</div></div>
+        <div><div class="label" style="opacity:0.55;">RGB</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">244 · 237 · 224</div></div>
+      </div>
+    </div>
+
+    <div style="background:#C8C3BB;color:#3D2B1A;padding:28px;border-radius:6px;display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div class="label" style="opacity:0.7;">Neutra de suporte</div>
+        <div class="serif" style="font-size:32px;font-weight:700;margin-top:8px;color:#2E4A37;">Névoa</div>
+      </div>
+      <div style="display:flex;gap:32px;align-items:end;">
+        <div><div class="label" style="opacity:0.6;">HEX</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">#C8C3BB</div></div>
+        <div><div class="label" style="opacity:0.6;">RGB</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">200 · 195 · 187</div></div>
+      </div>
+    </div>
+
+    <div style="background:#FAF7F2;color:#3D2B1A;padding:28px;border-radius:6px;border:1px solid #C8C3BB;display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div class="label" style="opacity:0.65;">Texto sobre escuro</div>
+        <div class="serif" style="font-size:32px;font-weight:700;margin-top:8px;color:#2E4A37;">Branco Quente</div>
+      </div>
+      <div style="display:flex;gap:32px;align-items:end;">
+        <div><div class="label" style="opacity:0.55;">HEX</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">#FAF7F2</div></div>
+        <div><div class="label" style="opacity:0.55;">RGB</div><div class="sans" style="font-size:20px;font-weight:500;margin-top:4px;">250 · 247 · 242</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-meta">Esquenta de Inverno · LASZLO</div>
+  <div class="page-number">03 · Paleta</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SLIDE 04 — TIPOGRAFIA -->
+<!-- ============================================================ -->
+<section class="slide" style="background:#F4EDE0;color:#3D2B1A;">
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#3D2B1A;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#3D2B1A;opacity:0.25;"></div>
+    <div class="label" style="color:#3D2B1A;opacity:0.65;">Sistema tipográfico</div>
+  </div>
+
+  <div style="position:absolute;left:120px;top:180px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:24px;">03 · Tipografia</div>
+    <h2 class="h2-section" style="font-size:64px;color:#2E4A37;">Duas vozes, um silêncio.</h2>
+  </div>
+
+  <!-- Bloco Playfair -->
+  <div style="position:absolute;left:120px;top:380px;width:840px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #C8C3BB;padding-bottom:14px;">
+      <div class="label" style="color:#C07A2B;">Display · Títulos</div>
+      <div class="label" style="opacity:0.55;">Google Fonts</div>
+    </div>
+    <div class="serif" style="font-size:140px;font-weight:700;line-height:0.9;letter-spacing:-0.04em;color:#2E4A37;margin-top:32px;">
+      Playfair
+    </div>
+    <div class="serif" style="font-size:96px;font-weight:400;font-style:italic;line-height:0.95;color:#2E4A37;opacity:0.85;margin-top:8px;">
+      Display
+    </div>
+    <p class="body-text" style="margin-top:32px;opacity:0.78;font-size:14px;max-width:560px;">
+      Serifada de alto contraste, elegante sem ser antiquada. Lê bem em tamanhos grandes. Itálico = ênfase emocional, máximo uma ocorrência por peça.
+    </p>
+    <div style="display:flex;gap:28px;margin-top:24px;">
+      <span class="label" style="background:#2E4A37;color:#FAF7F2;padding:8px 14px;border-radius:4px;">Bold 700</span>
+      <span class="label" style="background:transparent;color:#3D2B1A;padding:8px 14px;border-radius:4px;border:1px solid #3D2B1A;">Italic 400</span>
+    </div>
+  </div>
+
+  <!-- Bloco DM Sans -->
+  <div style="position:absolute;right:120px;top:380px;width:780px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #C8C3BB;padding-bottom:14px;">
+      <div class="label" style="color:#C07A2B;">Corpo · Textos de suporte</div>
+      <div class="label" style="opacity:0.55;">Google Fonts</div>
+    </div>
+    <div class="sans" style="font-size:128px;font-weight:500;line-height:0.95;letter-spacing:-0.02em;color:#3D2B1A;margin-top:32px;">DM Sans</div>
+    <p class="body-text" style="margin-top:32px;opacity:0.78;font-size:14px;max-width:600px;">
+      Geométrica humanista, neutra sem ser fria. Complementa bem a Playfair. Usar 400 para corpo, 500 para destaques, 300 para apoio leve, 600 em UPPERCASE para labels.
+    </p>
+
+    <!-- Escala tipográfica -->
+    <div style="margin-top:48px;border-top:1px solid #C8C3BB;padding-top:28px;">
+      <div class="label" style="opacity:0.6;margin-bottom:24px;">Escala da campanha</div>
+      <table style="width:100%;border-collapse:collapse;font-family:'DM Sans',sans-serif;">
+        <tr style="border-bottom:1px solid #E0D8C8;">
+          <td style="padding:12px 0;font-size:13px;opacity:0.65;width:38%;">H1 · Título de campanha</td>
+          <td style="padding:12px 0;font-size:13px;font-weight:500;">Playfair 700</td>
+          <td style="padding:12px 0;font-size:13px;text-align:right;font-weight:500;color:#C07A2B;">56–72 px</td>
+        </tr>
+        <tr style="border-bottom:1px solid #E0D8C8;">
+          <td style="padding:12px 0;font-size:13px;opacity:0.65;">H2 · Subtítulo de seção</td>
+          <td style="padding:12px 0;font-size:13px;font-weight:500;">Playfair 700</td>
+          <td style="padding:12px 0;font-size:13px;text-align:right;font-weight:500;color:#C07A2B;">36–44 px</td>
+        </tr>
+        <tr style="border-bottom:1px solid #E0D8C8;">
+          <td style="padding:12px 0;font-size:13px;opacity:0.65;">H3 · Título de card</td>
+          <td style="padding:12px 0;font-size:13px;font-weight:500;">DM Sans 500</td>
+          <td style="padding:12px 0;font-size:13px;text-align:right;font-weight:500;color:#C07A2B;">18–22 px</td>
+        </tr>
+        <tr style="border-bottom:1px solid #E0D8C8;">
+          <td style="padding:12px 0;font-size:13px;opacity:0.65;">Corpo principal</td>
+          <td style="padding:12px 0;font-size:13px;font-weight:500;">DM Sans 400</td>
+          <td style="padding:12px 0;font-size:13px;text-align:right;font-weight:500;color:#C07A2B;">15–16 px</td>
+        </tr>
+        <tr style="border-bottom:1px solid #E0D8C8;">
+          <td style="padding:12px 0;font-size:13px;opacity:0.65;">Corpo de apoio</td>
+          <td style="padding:12px 0;font-size:13px;font-weight:500;">DM Sans 300</td>
+          <td style="padding:12px 0;font-size:13px;text-align:right;font-weight:500;color:#C07A2B;">13–14 px</td>
+        </tr>
+        <tr>
+          <td style="padding:12px 0;font-size:13px;opacity:0.65;">Labels · Tags · CTA</td>
+          <td style="padding:12px 0;font-size:13px;font-weight:500;">DM Sans 600 UPPER</td>
+          <td style="padding:12px 0;font-size:13px;text-align:right;font-weight:500;color:#C07A2B;">10–14 px</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer-meta">Esquenta de Inverno · LASZLO</div>
+  <div class="page-number">04 · Tipografia</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SLIDE 05 — VAPOR DE ESSÊNCIA -->
+<!-- ============================================================ -->
+<section class="slide" style="background:linear-gradient(150deg,#2E4A37 0%,#1B2E22 100%);color:#FAF7F2;">
+
+  <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
+    <g stroke="#FAF7F2" fill="none" stroke-linecap="round">
+      <path d="M-100,1080 Q200,800 500,830 T1100,650 T2000,500" stroke-width="1.4" stroke-opacity="0.14"/>
+      <path d="M-100,1020 Q300,750 600,770 T1200,590 T2000,440" stroke-width="1.2" stroke-opacity="0.12"/>
+      <path d="M-100,960 Q400,700 700,710 T1300,530 T2000,380" stroke-width="1" stroke-opacity="0.10"/>
+      <path d="M-100,900 Q450,640 800,640 T1400,470 T2000,320" stroke-width="0.9" stroke-opacity="0.09"/>
+      <path d="M-100,840 Q500,580 850,570 T1450,410 T2000,260" stroke-width="0.8" stroke-opacity="0.08"/>
+      <path d="M-100,780 Q540,510 900,500 T1500,340 T2050,200" stroke-width="0.7" stroke-opacity="0.07"/>
+      <path d="M-100,720 Q580,450 940,420 T1540,280 T2100,150" stroke-width="0.6" stroke-opacity="0.06"/>
+      <path d="M-100,660 Q620,380 980,340 T1580,210 T2150,100" stroke-width="0.5" stroke-opacity="0.05"/>
+      <path d="M-100,600 Q660,310 1020,260 T1620,140 T2200,60" stroke-width="0.5" stroke-opacity="0.04"/>
+      <path d="M-100,540 Q700,240 1060,180 T1660,80 T2250,20" stroke-width="0.4" stroke-opacity="0.03"/>
+    </g>
+  </svg>
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#FAF7F2;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#FAF7F2;opacity:0.35;"></div>
+    <div class="label" style="color:#FAF7F2;opacity:0.75;">Elemento gráfico assinatura</div>
+  </div>
+
+  <div style="position:absolute;left:120px;top:240px;width:880px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:24px;">04 · Vapor de Essência</div>
+    <h1 class="h1-display" style="font-size:128px;line-height:0.95;color:#FAF7F2;">
+      Vapor<br>
+      <em style="font-style:italic;font-weight:400;">de Essência.</em>
+    </h1>
+    <p class="serif" style="margin-top:48px;font-size:24px;font-style:italic;line-height:1.4;color:#FAF7F2;opacity:0.9;">
+      Uma textura orgânica de linhas curvas e suaves, como fios de fumaça ou vapor se dispersando.
+    </p>
+  </div>
+
+  <div style="position:absolute;right:120px;top:280px;width:680px;color:#FAF7F2;">
+    <div style="border-top:1px solid #FAF7F2;border-color:rgba(250,247,242,0.25);padding-top:28px;">
+      <div class="label" style="opacity:0.7;margin-bottom:18px;">Como construir</div>
+      <ul style="list-style:none;padding:0;">
+        <li class="body-text" style="font-size:16px;line-height:1.7;opacity:0.92;padding:6px 0;">— Linhas sinuosas brancas/creme, espessura 0.5px a 1.5px</li>
+        <li class="body-text" style="font-size:16px;line-height:1.7;opacity:0.92;padding:6px 0;">— Opacidade entre 8% e 15% (presente, sem distrair)</li>
+        <li class="body-text" style="font-size:16px;line-height:1.7;opacity:0.92;padding:6px 0;">— Curvas ascendentes da esquerda para a direita</li>
+        <li class="body-text" style="font-size:16px;line-height:1.7;opacity:0.92;padding:6px 0;">— Concentração no terço inferior ou lateral esquerda</li>
+        <li class="body-text" style="font-size:16px;line-height:1.7;opacity:0.92;padding:6px 0;">— Nunca simétrico, nunca repetição mecânica</li>
+      </ul>
+    </div>
+
+    <div style="margin-top:48px;border-top:1px solid rgba(250,247,242,0.25);padding-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+      <div>
+        <div class="label" style="color:#C07A2B;margin-bottom:14px;">Onde aparece</div>
+        <p class="body-text" style="font-size:14px;line-height:1.7;opacity:0.85;">
+          Banner principal · capa de carrossel · header de e-mail · QR code · qualquer fundo verde musgo.
+        </p>
+      </div>
+      <div>
+        <div class="label" style="opacity:0.55;margin-bottom:14px;">Onde não aparece</div>
+        <p class="body-text" style="font-size:14px;line-height:1.7;opacity:0.7;">
+          Fundos claros · cards de produto individuais · tags · labels.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-meta footer-meta--light">Esquenta de Inverno · LASZLO</div>
+  <div class="page-number page-number--light">05 · Vapor de Essência</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SLIDE 06 — POSTS INSTAGRAM (FEED 1080x1080) -->
+<!-- ============================================================ -->
+<section class="slide slide-posts" style="background:#F4EDE0;color:#3D2B1A;height:1300px;">
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#3D2B1A;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#3D2B1A;opacity:0.25;"></div>
+    <div class="label" style="color:#3D2B1A;opacity:0.65;">Aplicações · Feed Instagram</div>
+  </div>
+
+  <div style="position:absolute;left:120px;top:160px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:18px;">05 · Posts</div>
+    <h2 class="h2-section" style="font-size:48px;color:#2E4A37;">Feed Instagram · 1080 × 1350</h2>
+    <p class="body-text" style="font-size:14px;opacity:0.75;margin-top:10px;">Seis variações editoriais para o feed da campanha</p>
+  </div>
+
+  <!-- Grid 3x2 de mockups 1080x1350 -->
+  <div class="posts-grid" style="position:absolute;left:120px;top:340px;display:grid;grid-template-columns:repeat(3, 320px);grid-template-rows:repeat(2, 400px);gap:32px;">
+
+    <div style="position:relative;width:320px;height:400px;border-radius:6px;overflow:hidden;background:#2E4A37;"><img src="FEED/1.png" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div style="position:relative;width:320px;height:400px;border-radius:6px;overflow:hidden;background:#F4EDE0;"><img src="FEED/2.png" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div style="position:relative;width:320px;height:400px;border-radius:6px;overflow:hidden;background:#C07A2B;"><img src="FEED/3.png" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div style="position:relative;width:320px;height:400px;border-radius:6px;overflow:hidden;background:#F4EDE0;"><img src="FEED/4.png" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div style="position:relative;width:320px;height:400px;border-radius:6px;overflow:hidden;background:#3D2B1A;"><img src="FEED/5.png" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div style="position:relative;width:320px;height:400px;border-radius:6px;overflow:hidden;background:#FAF7F2;"><img src="FEED/6.png" style="width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div class="footer-meta">Esquenta de Inverno · LASZLO</div>
+  <div class="page-number">06 · Posts</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SLIDE 07 — CAPAS DE REELS (1080x1920) -->
+<!-- ============================================================ -->
+<section class="slide slide-reels" style="background:#F4EDE0;color:#3D2B1A;">
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#3D2B1A;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#3D2B1A;opacity:0.25;"></div>
+    <div class="label" style="color:#3D2B1A;opacity:0.65;">Aplicações · Capas de Reels</div>
+  </div>
+
+  <div style="position:absolute;left:120px;top:160px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:18px;">06 · Reels</div>
+    <h2 class="h2-section" style="font-size:48px;color:#2E4A37;">Capas de Reels · 1080 × 1920</h2>
+    <p class="body-text" style="font-size:14px;opacity:0.75;margin-top:10px;">Três exemplos editoriais — vertical 9:16</p>
+  </div>
+
+  <!-- 3 mockups 9:16 lado a lado (cada 320x568) -->
+  <div class="reels-grid" style="position:absolute;left:170px;top:340px;display:flex;gap:80px;">
+
+    <div style="position:relative;width:340px;height:604px;border-radius:8px;overflow:hidden;background:#2E4A37;"><img src="REELS/7.png" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div style="position:relative;width:340px;height:604px;border-radius:8px;overflow:hidden;background:#C07A2B;"><img src="REELS/8.png" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div style="position:relative;width:340px;height:604px;border-radius:8px;overflow:hidden;background:#3D2B1A;"><img src="REELS/9.png" style="width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div class="footer-meta">Esquenta de Inverno · LASZLO</div>
+  <div class="page-number">07 · Reels</div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- SLIDE 09 — ASSINATURA / FECHAMENTO -->
+<!-- ============================================================ -->
+<section class="slide" style="background:url('backgraund.png') center/cover no-repeat;color:#FAF7F2;">
+
+  <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
+    <g stroke="#FAF7F2" fill="none" stroke-linecap="round">
+      <path d="M-100,920 Q300,820 600,860 T1200,750 T2000,680" stroke-width="1.4" stroke-opacity="0.13"/>
+      <path d="M-100,990 Q400,910 700,930 T1300,830 T2000,770" stroke-width="1.1" stroke-opacity="0.11"/>
+      <path d="M-100,1060 Q500,980 800,990 T1400,890 T2000,830" stroke-width="0.9" stroke-opacity="0.09"/>
+      <path d="M-100,840 Q350,740 650,770 T1250,640 T2000,560" stroke-width="0.7" stroke-opacity="0.08"/>
+      <path d="M-100,770 Q400,670 720,690 T1300,560 T2000,480" stroke-width="0.6" stroke-opacity="0.07"/>
+      <path d="M-100,700 Q420,600 750,610 T1320,480 T2000,400" stroke-width="0.5" stroke-opacity="0.06"/>
+      <path d="M-100,630 Q470,530 800,520 T1380,410 T2000,330" stroke-width="0.5" stroke-opacity="0.05"/>
+    </g>
+  </svg>
+
+  <div style="position:absolute;top:80px;left:64px;display:flex;align-items:center;gap:40px;">
+    <div class="logo-laszlo" style="color:#FAF7F2;">LASZLO</div>
+    <div style="width:1px;height:28px;background:#FAF7F2;opacity:0.35;"></div>
+    <div class="label" style="color:#FAF7F2;opacity:0.75;">Fim de documento</div>
+  </div>
+
+  <div style="position:absolute;left:120px;top:50%;transform:translateY(-50%);max-width:1200px;">
+    <div class="label" style="color:#C07A2B;margin-bottom:32px;">Que floresça com cuidado.</div>
+    <h1 class="h1-display" style="font-size:104px;line-height:0.95;letter-spacing:-0.035em;color:#FAF7F2;">
+      O inverno<br>
+      que cheira <em style="font-weight:400;font-style:italic;color:#C07A2B;">bem.</em>
+    </h1>
+    <div style="margin-top:64px;display:flex;align-items:center;gap:28px;">
+      <div style="width:80px;height:1px;background:#C07A2B;"></div>
+      <p class="serif" style="font-size:22px;font-style:italic;opacity:0.85;">Pronta para handoff à agência. Pronta para floresceu nos canais.</p>
+    </div>
+  </div>
+
+
+  <div style="position:absolute;bottom:64px;left:120px;right:120px;display:flex;justify-content:space-between;align-items:flex-end;color:#FAF7F2;">
+    <div>
+      <div class="label" style="opacity:0.55;margin-bottom:8px;">Identidade visual</div>
+      <div class="sans" style="font-size:14px;font-weight:500;">Esquenta de Inverno</div>
+    </div>
+    <div style="text-align:center;">
+      <div class="label" style="opacity:0.55;margin-bottom:8px;">Aplicações</div>
+      <div class="sans" style="font-size:14px;font-weight:500;">Jhonatan Mattos</div>
+    </div>
+    <div style="text-align:right;">
+      <div class="label" style="opacity:0.55;margin-bottom:8px;">Marca</div>
+      <div class="sans" style="font-size:14px;font-weight:500;">LASZLO · Aromaterapia</div>
+    </div>
+  </div>
+
+  <div class="page-number page-number--light" style="opacity:0.4;">09 · Fim</div>
+</section>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  // Inicializar o Lenis para Scroll Suave
+  const lenis = new Lenis({
+    duration: 1.5, // Duração maior para deixar o scroll super macio e luxuoso
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+    smoothWheel: true,
+  });
+
+  lenis.on('scroll', ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+  gsap.ticker.lagSmoothing(0);
+
+  // Inicializar GSAP
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray('.slide').forEach((slide) => {
+    // Pegar apenas os elementos de conteúdo, ignorando o fundo (background)
+    const elementsToAnimate = slide.querySelectorAll('.h1-display, .h2-section, .label, .serif, .body-text, img, div[style*="background:url"], .logo-laszlo, .page-number, .footer-meta');
+
+    if (elementsToAnimate.length > 0) {
+      gsap.from(elementsToAnimate, {
+        scrollTrigger: {
+          trigger: slide,
+          start: "top 95%", // Começa antes (quando mal aparece na tela)
+          end: "top 10%",   // Termina mais tarde (toma quase a tela toda para concluir)
+          scrub: 3.5        // Scrub altíssimo para um atraso muito suave
+        },
+        y: 140, // Distância maior para aproveitar o tempo lento
+        opacity: 0,
+        filter: "blur(12px)", 
+        stagger: 0.12 
+      });
+    }
+  });
+</script>
+</body>
+</html>
